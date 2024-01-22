@@ -9,7 +9,7 @@ public class Main {
         System.out.print("Enter text: ");
         String text = input.nextLine();
 
-
+        //To write the file to text
         try {
             FileWriter fileWriter = new FileWriter("notepad.txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
@@ -21,6 +21,7 @@ public class Main {
         }
 
 
+        //To read the text from file
         try {
             FileReader fileReader = new FileReader("notepad.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
